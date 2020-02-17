@@ -8,6 +8,17 @@ body {
 	margin: 0;
 }
 
+h1 {
+	font-family: arial;
+	width: 70%;
+	padding-top: 5%;
+	margin: auto;
+	font-size: 44px;
+	line-height: 72px;
+	color: white;
+	text-shadow: 1px 1px 5px rgba(195, 50, 67, 1);
+}
+
 /*Navigation & Header*/
 
 header {
@@ -45,6 +56,38 @@ header {
 #globe {
 	width: 60%;
 }
+
+#hero {
+	text-align: center;
+	/*position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+}
+
+#hero h3 {
+	color: #c33243;
+}
+
+/*Full Screen Video*/
+/*.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
 
 /*Solutions Section*/
 
@@ -143,4 +186,21 @@ header {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
+}
+
+
+/*Media Queries*/
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
 }
