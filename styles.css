@@ -46,13 +46,37 @@
 /*Services Grid*/
 
 .services {
-	width: 90%;
+	width: 70%;
   	max-width: 1240px;
  	margin: 0 auto;
    
 	display: grid;
 	   
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+
+.cases {
+	width: 90%;
+  	max-width: 1240px;
+ 	margin: 0 auto;
+   
+	display: grid;
+	   
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+
+.features {
+	width: 50%;
+  	max-width: 1240px;
+ 	margin: 0 auto;
+   
+	display: grid;
+	   
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	grid-gap: 20px;
 }
