@@ -4,7 +4,17 @@
 	text-align: center;
 }
 
+body {
+	margin: 0;
+}
+
 /*Navigation & Header*/
+
+header {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	min-width: 100%;
+	box-sizing: border-box;
+}
 
 #logo {
 	margin-left: 5%;
@@ -15,17 +25,33 @@
 #top-nav {
 	display: inline-block;
 	margin-left: 5%;
-	text-align: center;
 }
 
 #top-nav li {
 	display: inherit;
+	margin-left: 1%;
+}
+
+#top-nav li a {
+	text-decoration: none;
 }
 
 /*InfoGraphic*/
 
+#map {
+	text-align: center;
+}
+
 #globe {
-	width: 100%;
+	width: 60%;
+}
+
+/*Solutions Section*/
+
+#solutions-intro {
+	width: 50%;
+  	max-width: 1240px;
+ 	margin: 0 auto;
 }
 
 /*Card Styling For All Grids*/
@@ -46,12 +72,32 @@
 	width: 50%;
   	max-width: 1240px;
  	margin: 0 auto;
-   
+    padding-bottom: 50px;
 	display: grid;
 	   
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	grid-gap: 20px;
+}
+
+.feature-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-item h4 {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.feature-icon{
+	width: 36px;
+	height: 36px;
+	display: inline-block;
 }
 
 /*Services Grid*/
@@ -67,6 +113,7 @@
 	grid-template-rows: auto;
 	grid-gap: 20px;
 }
+
 
 .icon {
 	margin: auto;
