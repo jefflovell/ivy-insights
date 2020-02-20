@@ -209,6 +209,14 @@ nav li a:active, nav li a:visited {
 	text-transform: uppercase;
 }
 
+.tagline {
+	color: white;
+	text-shadow: 1px 1px 3px rgba 50,50,50, .5;
+	font-style: italic;
+	font-family: serif;
+	color: rgba(255,255,255,.8);
+}
+
 .hero h1 {
 	position: absolute;
 	z-index: 2;
@@ -224,10 +232,9 @@ nav li a:active, nav li a:visited {
 .hero h3 {
 	position: absolute;
 	z-index: 2;
-	top: 72%;
+	top: 20%;
 	left: 50%;
 	transform: translate(-50%);
-
 	font-size: 1.6em;
 }
 
@@ -245,11 +252,12 @@ nav li a:active, nav li a:visited {
 	font-weight: 400;
 	box-shadow: 1px 1px 5px #000;
 	border: none;
+	transition: all .6s ease;
 }
 
 .hero button:hover {
 	cursor: pointer;
-	transition: all .7s ease;
+	transition: all .3s ease;
 	background-color: rgb(255, 0, 0);
 	text-shadow: 1px 1px 5px rgba(255,0,0,1);
 	box-shadow: 0px 0px 5px rgba(255,255,255,.3);
@@ -262,8 +270,8 @@ nav li a:active, nav li a:visited {
 #btn-1 {
 	position: absolute;
 	z-index: 2;
-	left: 25%;
-	top: 85%;
+	left: 30%;
+	top: 75%;
 
 }
 
@@ -272,7 +280,7 @@ nav li a:active, nav li a:visited {
 	display: inline-block;
 	z-index: 2;
 	left: 55%;
-	top: 85%;
+	top: 75%;
 }
 
 /* Main Container */
@@ -396,17 +404,3 @@ main {
 
 
 /*Media Queries*/
-
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
-}
